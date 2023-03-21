@@ -1,6 +1,5 @@
-
 <!doctype html>
-<html>
+<html class="htmlbox">
 
 <head>
 <meta charset="UTF-8">
@@ -10,34 +9,68 @@
         /*background-image: linear-gradient(to right, #262626, #4E4E4E);*/
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background-color:rgb(34, 34, 34);
-    }
+    }.htmlbox{
+    background-color: #262626;
+    width: 100%;
+    height: 3000px;
+}
 
 	.box1{  /*FIRST BOX*/
     background-repeat: no-repeat;
     background-attachment: fixed; /*I think this is how you have FIXED BACKGROUNDS*/
-	width: 33%;
+	width: 27%;
 	height: 700px;
     font-size: 40px;
 	background-image: linear-gradient(#3E3E3E, #4E4E4E , #262626);
-	margin: 0px auto;	
+	margin-left: 6%;
+    margin-top: 2%;	
 	border: solid;
 	border-width: 3px;
-    
-    
-
+    border-color: rgba(255, 0, 0, 0);
 	}
+
+    .row{
+        display: table;
+        width:100%;
+        table-layout: fixed;
+        border-spacing: 90px;
+    }
+    .column{
+        background-repeat: no-repeat;
+        background-attachment: fixed; /*I think this is how you have FIXED BACKGROUNDS*/
+        display: table-cell;
+        background-image: linear-gradient( #3D2E26, #3D2E26 ,#25150B);
+        width: 33%;
+        height: 700px;
+        font-size: 40px;
+        color: white;
+        border-radius: 50px 50px 0px 50px;
+
+
+        
+    }
+    h1{
+        margin-left: 5%;
+        margin-top: auto;
+        font-size: 45px;
+    }
+    p{
+        font-size: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 
     .container{
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 1250px;
     }
-
     .sitetitle{ 
         position:absolute;
-        top: 115%;
+        top: 27%;
         right: 10%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translate(-10%);
@@ -48,12 +81,10 @@
         margin: 0;
         z-index: 2;
         color: #ab9e9ecb;
-
     }
-
     .sitetitlep{
         position:absolute;
-        top: 210%;
+        top: 50%;
         right: 13%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translate(-10%);
@@ -64,14 +95,11 @@
         margin: 0;
         z-index: 2;
         color: #ab9e9ecb;
-
-
     }
-
     .overlay{ /*DARK OVERLAY FOR BANNER*/
         background: #0000009d;
         width: 100%;
-        height: 1250px;
+        height: 1260px;
         position: absolute;
         top: 0;
         left: 0;
@@ -85,6 +113,49 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;  
+        
+    }
+    .blackcoffee{
+        width: 100%;
+        height: 50%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 50px 50px 0px 0px;
+
+    }
+    .latte{
+        width: 100%;
+        height: 50%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 50px 50px 0px 0px;
+    }
+    
+    .icedcoffee{
+        width: 100%;
+        height: 50%;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .divclass{
+        
+    }
+    .missiongoals{
+        color: white;
+        font-size: 50px;
+
+
     }
 
 </style>
@@ -95,14 +166,15 @@
 	height: 200px;
 	/*background-color: #261307;*/
 	margin: 2px auto;
-	border: double;
-    border-radius: 0px;
+	
+
 	}
 	th, td{
-		padding: 8px;
+		padding: 80px;
 		text-align: left;
-		border-bottom: 1px solid #422E22;
-        border-radius: 10px;
+		border-bottom: 0px solid #422E22;
+        border-radius: 0px;
+        font-size: 40px;
 	}
 </style> <!--/*CONTACT SECTION*/-->
 </head>
@@ -112,65 +184,105 @@
     <img class="img" src="img/coffee.jpg" alt="coffee">
     <h1 class="sitetitle">introducing: <br>cophi</h1>
     <p class="sitetitlep">The brand new, <br> all natural, herb infused<br> supplement you need <br>in your daily life </p>
-		
-    
-    <!--SHOWCASE SECTION-->
-    <!--BOX 1-->    
-    <div class="box1", style="color: white">
-	    <h1 align="left">FIRST BOX</h1>
-	    <p align="center">This is a test</p>	
-        <div class="overlay"></div>
+</div>
+
+
+<body class="missiongoals">
+    <div>
+        <br>
+        <br>
+        <br>
+        <h3 align="center">With Cophi in hand, you will feel more energized with <br> a safe and natural jolt of energy <br>
+            <br><span style="font-size: 40px;"> meet the line up:</span></h3>
+        <br>
+        
+    </div>
+</body>
+
+
+
+<!--new row method-->
+<div class="row">
+    <div class="column">
+        <img class="blackcoffee" src="img/blackcoffee.jfif" alt="blackcoffee">
+        <h1 align="center">cophi original</h1>
+        <p align="center">Everything is better in black, why not fill your mornings with a fast, easy and strong pot of Cophi Original to begin your journey.</p>
     </div>
 
-    <!--BOX 2-->    
-    <div class="box2"></div>
-
-    <!--BOX 3-->    
-    <div class="box3"></div>
-
+    <div class="column">
+        <img class="icedcoffee" src="img/icedcoffee.jfif" alt="icedcoffee">
+        <h1 align="center">cophi 32</h1>
+        <p align="center">Sleeping past your alarm and being late for your am classes can kill your GPA. Waking up to a cold, refreshing, creamy bean smsoothie is the only way to start your week.</p>
+    </div>
+    
+    <div class="column">
+        <img class="latte" src="img/latte.jfif" alt="latte">
+        <h1 align="center">cophi pillow</h1>
+        <p align="center">Not trying to live life in the fast lane? The mentally supportive and cushy feel of Cophi Pillow will ensure that your day starts with another satisfying turn.</p>
+    </div>
+    <div class="overlay"></div>
 </div>
 
 
 
 
-<div><!--CONTACT SECTION-->
+
+<body>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+
+
+<div class="divclass"><!--CONTACT SECTION-->
 	<table , style="color: white" class="table" cellpadding="5px" cellspacing="5px" frame="border"
 
 	<tr align="center">
-		<th bgcolor="#422E22">Sign up for our waitlist!</th>
-		<th bgcolor="#422E22" align="center">Address</td>
-		<th bgcolor="#422E22" align="center">12345 Pumpkin Spice Lane <br>Atlanta, Georgia 11233</td>
+		<th bgcolor="#828282">Sign up for our waitlist!</th>
+		<th bgcolor="#828282" align="center">Address</td>
+		<th bgcolor="#828282" align="center">12345 Pumpkin Spice Lane <br>Atlanta, Georgia 11233</td>
 	</tr>
 		
-	<tr bgcolor="#422E22">
-		<th align="center">Name
-            <br>
-        <!--enter the submit button here-->
-        </th>
-		<td align="center">Email</td>
+	<tr bgcolor="#828282">
+		<th align="center">Name <input type="text"><input type="submit"></th> 
+		<td align="center">Email: </td>
 		<td align="center">Starbucks$ucks@aol.com</td>
 	</tr>
 		
-	<tr bgcolor="#422E22" bordercolor="#422E22">
-		<th align="center">Email</th>
-		<td align="center">Phone</td>
-		<td align="center">(123)456-7890</td>
+	<tr bgcolor="#828282" bordercolor="tan">
+		<th align="center">Email  <input type="text"><input type="submit"></th>
+		<td align="center">Phone:</td>
+		<td align="center">(123) 456-7890</td>
 	</tr>
 	</table>	
+    <br>
+    <br>
+    <br>
 </div>
-	
-<table align="center">
-	<tr>
-		<td>01</td>
-		<td>02</td>
-		<td>03</td>
-	</tr>
-	<tr>
-		<td> Aa</td>
-		<td> Bb</td>
-		<td> Cc</td>
-	</tr>
-	</table> <!--dont know what any of this means-->
 </body>
-
 </html>
